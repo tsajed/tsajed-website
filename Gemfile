@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
+gem "font-awesome-rails"
+gem 'bootstrap-sass', '~> 3.3.4'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+#gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+#gem "twitter-bootstrap-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'cowsay'
 gem 'rails_12factor', group: :production
-gem 'unicorn'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,12 +35,16 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'puma'
+gem 'mail_form'
+gem 'simple_form'
+gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+group :development, :test do
+  gem 'foreman'
+end
