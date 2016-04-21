@@ -39,6 +39,7 @@ gem 'puma'
 gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
