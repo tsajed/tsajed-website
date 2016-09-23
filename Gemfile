@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0
+ruby '2.2.0'
 gem "font-awesome-rails"
 gem 'bootstrap-sass', '~> 3.3.4'
 gem "therubyracer"
